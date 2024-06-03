@@ -2,12 +2,14 @@
 import React from 'react'
 import Intro from './components/Intro'
 import About from './components/About'
+import TechStack from './components/TechStack'
 
 function App() {
     return (
         <>
         <Intro/>
         <About/>
+        <TechStack/>
         </>
     )
 }

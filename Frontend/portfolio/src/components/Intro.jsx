@@ -19,13 +19,11 @@ function Intro() {
                         <button className='border border-[#9393f9ad] p-2 rounded w-[150px] text-white hover:bg-[#6666ff] duration-150 '>Learn More</button>
                     </div>
                 </div>
-
                 <div className='flex h-[400px] rounded-2xl shadow-[#0000cc7b] shadow-md'>
                     <video autoPlay muted loop className='rounded-2xl'>
                         <source src='/video2.mp4' />
                     </video>
                 </div>
-          
             </div>
             <div className='h-[1px] w-[97%] border border-[#ffffff41]'></div>
         </div>
