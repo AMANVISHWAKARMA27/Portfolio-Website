@@ -22,7 +22,7 @@ function Intro() {
 
                 <div className='flex h-[400px] rounded-2xl shadow-[#0000cc7b] shadow-md'>
                     <video autoPlay muted loop className='rounded-2xl'>
-                        <source src='./public/video2.mp4' />
+                        <source src='/video2.mp4' />
                     </video>
                 </div>
           
