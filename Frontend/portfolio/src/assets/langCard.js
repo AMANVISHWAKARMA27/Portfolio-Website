@@ -1,46 +1,46 @@
 export const langCard = [
   {
-    img: "./public/html.png",
+    img: "/html.png",
     level: "Advanced",
     textColor: "text-red-500"
   },
   {
-    img: "./public/css.png",
+    img: "/css.png",
     level: "Advanced",
     textColor: "text-red-500"
   },
   {
-    img: "./public/js.png",
+    img: "/js.png",
     level: "Advanced",
     textColor: "text-red-500"
   },
   {
-    img: "./public/c.jpeg",
+    img: "/c.jpeg",
     level: "Advanced",
     textColor: "text-red-500"
   },
   {
-    img: "./public/cpp.jpeg",
+    img: "/cpp.jpeg",
     level: "Advanced",
     textColor: "text-red-500"
   },
   {
-    img: "./public/python.png",
+    img: "/python.png",
     level: "Advanced",
     textColor: "text-red-500"
   },
   {
-    img: "./public/java.png",
+    img: "/java.png",
     level: "Intermediate",
     textColor: "text-yellow-500"
   },
   {
-    img: "./public/sql.jpeg",
+    img: "/sql.jpeg",
     level: "Advanced",
     textColor: "text-yellow-500"
   },
   {
-    img: "./public/go.jpeg",
+    img: "/go.jpeg",
     level: "Beginner",
     textColor: "text-green-500"
   }

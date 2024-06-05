@@ -1,51 +1,51 @@
 export const libCard = [
     {
-        img: "./public/react.png",
+        img: "./react.png",
         level: "Advanced",
         textColor: "text-red-500"
     },
     {
-        img: "./public/reactvite.jpeg",
+        img: "./reactvite.jpeg",
         level: "Advanced",
         textColor: "text-red-500"
     },
     {
-        img: "./public/npm.png",
+        img: "./npm.png",
         level: "Advanced",
         textColor: "text-red-500"
     },
     {
-        img: "./public/bootstrap.png",
+        img: "./bootstrap.png",
         level: "Advanced",
         textColor: "text-red-500"
     },
     {
-        img: "./public/tailwind.png",
+        img: "./tailwind.png",
         level: "Advanced",
         textColor: "text-red-500"
     },
     {
-        img: "./public/next.png",
+        img: "./next.png",
         level: "Intermediate",
         textColor: "text-yellow-500"
     },
     {
-        img: "./public/express.png",
+        img: "./express.png",
         level: "Intermediate",
         textColor: "text-yellow-500"
     },
     {
-        img: "./public/mongo.png",
+        img: "./mongo.png",
         level: "Intermediate",
         textColor: "text-yellow-500"
     },
     {
-        img: "./public/node.png",
+        img: "./node.png",
         level: "Intermediate",
         textColor: "text-yellow-500"
     },
     {
-        img: "./public/mysql.png",
+        img: "./mysql.png",
         level: "Intermediate",
         textColor: "text-yellow-500"
     }

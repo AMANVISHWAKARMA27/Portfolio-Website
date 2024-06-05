@@ -3,6 +3,7 @@ import React from 'react'
 import Intro from './components/Intro'
 import About from './components/About'
 import TechStack from './components/TechStack'
+import Projects from './components/Projects'
 
 function App() {
     return (
@@ -10,6 +11,7 @@ function App() {
         <Intro/>
         <About/>
         <TechStack/>
+        <Projects/>
         </>
     )
 }

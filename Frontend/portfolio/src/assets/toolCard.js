@@ -1,31 +1,31 @@
 export const toolCard = [
     {
-        img: "./public/windows.png",
+        img: "/windows.png",
         level: "Advanced",
         textColor: "text-red-500"
     },
     {
-        img: "./public/vscode.jpeg",
+        img: "/vscode.jpeg",
         level: "Advanced",
         textColor: "text-red-500"
     },
     {
-        img: "./public/github.png",
+        img: "/github.png",
         level: "Advanced",
         textColor: "text-red-500"
     },
     {
-        img: "./public/colab.png",
+        img: "/colab.png",
         level: "Advanced",
         textColor: "text-red-500"
     },
     {
-        img: "./public/git.png",
+        img: "/git.png",
         level: "Intermediate",
         textColor: "text-yellow-500"
     },
     {
-        img: "./public/ubuntu.png",
+        img: "/ubuntu.png",
         level: "Intermediate",
         textColor: "text-yellow-500"
     },
