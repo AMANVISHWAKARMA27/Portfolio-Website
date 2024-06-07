@@ -15,7 +15,7 @@ function CardHolder({ title, langCard }) {
             <div className='flex flex-wrap justify-evenly w-[100%]'>
                 {langCard.map((card, index) => (
                     <div key={index} className='p-[10px] flex flex-col items-center mb-1'>
-                        <Card img={card.img} level={card.level} textColor={card.textColor} />
+                        <Card img={card.img} level={card.level} textColor={card.textColor} url = {card.url} />
                     </div>
                 ))}
             </div>
