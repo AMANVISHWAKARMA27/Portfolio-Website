@@ -35,7 +35,7 @@ function Info() {
                     <div className='h-[1px] border border-[#b0edfc] w-[100px]'></div>
                 </div>
                 <div>
-                    <p className='text-[#b0edfc]'>Call on&nbsp; &nbsp; <a
+                    <p className='text-[#b0edfc]'>Call on&nbsp; <a
                         className='cursor-pointer hover:scale-110 hover:text-[#aa5df7]'
                         onClick={handleCopy}
                     >
