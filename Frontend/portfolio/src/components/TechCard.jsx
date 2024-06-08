@@ -8,6 +8,7 @@ function TechCard({ img, vdoSrc, title, url }) {
 
     const handleMouseEnter = () => {
         setIsHovered(true);
+        videoRef.current.currentTime = 0; // Restart the video
         videoRef.current.play();
     };
 
@@ -23,7 +24,7 @@ function TechCard({ img, vdoSrc, title, url }) {
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
             >
-                <div onClick={() => {window.location.href= url}} className={`h-[80%] w-[98%] rounded-lg mt-[1px] bg-cover flex justify-center items-center hover:bg-none`} style={{ backgroundImage: `url(${img})` }}>
+                <div onClick={() => {window.location.href = url}} className={`h-[80%] w-[98%] rounded-lg mt-[1px] bg-cover flex justify-center items-center hover:bg-none`} style={{ backgroundImage: `url(${img})` }}>
                     <video ref={videoRef} muted loop className='rounded-lg inset-0 transition-opacity opacity-0 hover:opacity-100'>
                         <source src={vdoSrc} />
                     </video>

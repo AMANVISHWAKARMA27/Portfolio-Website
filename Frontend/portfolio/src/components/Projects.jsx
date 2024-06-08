@@ -6,8 +6,9 @@ import { techCard } from '../assets/techCard'; // Importing the techCard array
 function Projects() {
   return (
     <div className='font-sans'>
-      <div className='p-[10px]'>
+      <div className='p-[10px] flex flex-col justify-around items-center'>
         <div className='flex flex-col w-[100%] min-h-[100vh] justify-between items-center font-sans '>
+
           <div className=' flex flex-col w-[95%] mt-[100px] h-[15vh] '>
             <h1 className='text-white text-[60px]'>
               MY <span className='text-[#6666ff] text-[75px] hover:shadow-lg '>PROJECTS</span>
@@ -41,11 +42,11 @@ function Projects() {
                   </div>
                   <p className='text-[25px] text-[#80e5ff]'>Share & Care</p>
                 </div>
-
               </div>
             </div>
           </div>
         </div>
+        <div className='h-[1px] w-[97%] border border-[#ffffff41]'></div>
       </div>
     </div>
   );
