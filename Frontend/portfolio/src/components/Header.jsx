@@ -1,12 +1,42 @@
 /* eslint-disable no-unused-vars */
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
 function Header({ activeSection }) {
+    const [scrolledSection, setScrolledSection] = useState(activeSection);
+
     const scrollToSection = (sectionId) => {
         const section = document.getElementById(sectionId);
         section.scrollIntoView({ behavior: 'smooth' });
     };
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const sections = document.querySelectorAll('section');
+            const scrollPosition = window.scrollY;
+            let nearestSection = null;
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionBottom = sectionTop + section.clientHeight;
+
+                if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                    nearestSection = section;
+                }
+            });
+
+            if (nearestSection) {
+                setScrolledSection(nearestSection.id);
+            }
+        };
+
+        // Listen for scroll events
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     return (
         <>
@@ -14,30 +44,32 @@ function Header({ activeSection }) {
                 <nav className="flex justify-end space-x-20 items-center text-[15px] mr-[20px] font-sans">
                     <a
                         onClick={() => scrollToSection('intro')}
-                        className={`transition-transform duration-300 cursor-pointer ${activeSection === 'intro' ? 'text-[#00ffff] scale-110' : 'text-[#b0edfc]'}`}>HOME</a>
+                        className={`transition-transform duration-300 cursor-pointer ${scrolledSection === 'intro' ? 'text-[#00ffff] scale-110' : 'text-[#b0edfc]'}`}>HOME</a>
                     <a
                         onClick={() => scrollToSection('about')}
-                        className={`transition-transform duration-300 cursor-pointer ${activeSection === 'about' ? 'text-[#00ffff] scale-110' : 'text-[#b0edfc]'}`}>ABOUT ME</a>
+                        className={`transition-transform duration-300 cursor-pointer ${scrolledSection === 'about' ? 'text-[#00ffff] scale-110' : 'text-[#b0edfc]'}`}>ABOUT ME</a>
                     <a
                         onClick={() => scrollToSection('techstack')}
-                        className={`transition-transform duration-300 cursor-pointer ${activeSection === 'techstack' ? 'text-[#00ffff] scale-110' : 'text-[#b0edfc]'}`}>TECH STACK</a>
+                        className={`transition-transform duration-300 cursor-pointer ${scrolledSection === 'techstack' ? 'text-[#00ffff] scale-110' : 'text-[#b0edfc]'}`}>TECH STACK</a>
                     <a
                         onClick={() => scrollToSection('projects')}
-                        className={`transition-transform duration-300 cursor-pointer ${activeSection === 'projects' ? 'text-[#00ffff] scale-110' : 'text-[#b0edfc]'}`}>MY PROJECTS</a>
+                        className={`transition-transform duration-300 cursor-pointer ${scrolledSection === 'projects' ? 'text-[#00ffff] scale-110' : 'text-[#b0edfc]'}`}>MY PROJECTS</a>
                     <a
                         onClick={() => scrollToSection('info')}
-                        className={`transition-transform duration-300 cursor-pointer ${activeSection === 'info' ? 'text-[#00ffff] scale-110' : 'text-[#b0edfc]'}`}>CONTACT ME</a>
+                        className={`transition-transform duration-300 cursor-pointer ${scrolledSection === 'info' ? 'text-[#00ffff] scale-110' : 'text-[#b0edfc]'}`}>CONTACT ME</a>
                 </nav>
             </header>
 
+
             {activeSection !== 'intro' && (
-                <div className='fixed z-10 h-[40px] w-[40px] text-[#b0edfc7c] top-[90vh] left-[95vw]'>
+                <div className='fixed z-10 h-[40px] w-[40px] text-[#b0edfc7c] bottom-[5vh] right-[5vw]'>
                     <i
-                        className="fa-solid fa-circle-arrow-up text-[30px] cursor-pointer"
+                        className="fas fa-arrow-up text-[30px] cursor-pointer"
                         onClick={() => scrollToSection('intro')}
                     ></i>
                 </div>
             )}
+
 
 
             <div className='fixed z-10 flex items-center justify-center text-[#b0edfc7c] bottom-[1vh] left-[2vw] flex-col'>

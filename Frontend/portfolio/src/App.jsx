@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+// App.js or your main component
 import React, { useEffect, useState } from 'react';
 import Intro from './components/Intro';
 import About from './components/About';
@@ -6,7 +7,7 @@ import TechStack from './components/TechStack';
 import Projects from './components/Projects';
 import Info from './components/Info';
 import Header from './components/Header';
-import SplashScreen from './components/SplashScreen';
+import SplashScreen from './components/SplashScreen'
 
 function App() {
     const [activeSection, setActiveSection] = useState('intro');
@@ -39,14 +40,19 @@ function App() {
         };
     }, []);
 
-    const handleSplashEnd = () => {
-        setShowSplash(false);
-    };
+    useEffect(() => {
+       
+        const splashTimer = setTimeout(() => {
+            setShowSplash(false);
+        }, 3000); 
+
+        return () => clearTimeout(splashTimer);
+    }, []);
 
     return (
         <div>
-            {showSplash ? (
-                <SplashScreen onAnimationEnd={handleSplashEnd} />
+            {showSplash ? ( 
+                <SplashScreen handleSplashEnd={() => setShowSplash(false)} />
             ) : (
                 <>
                     <Header activeSection={activeSection} />

@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 
-function Intro({activeSection}) {
+function Intro({ activeSection }) {
 
     const scrollToSection = (sectionId) => {
         const section = document.getElementById(sectionId);
