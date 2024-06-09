@@ -7,9 +7,11 @@ import TechStack from './components/TechStack';
 import Projects from './components/Projects';
 import Info from './components/Info';
 import Header from './components/Header';
+import SplashScreen from './components/SplashScreen';
 
 function App() {
     const [activeSection, setActiveSection] = useState('intro');
+    const [showSplash, setShowSplash] = useState(true);
 
     useEffect(() => {
         const sections = document.querySelectorAll('section');
@@ -38,14 +40,24 @@ function App() {
         };
     }, []);
 
+    const handleSplashEnd = () => {
+        setShowSplash(false);
+    };
+
     return (
         <div>
-            <Header activeSection={activeSection} />
-            <section id="intro"><Intro /></section>
-            <section id="about"><About /></section>
-            <section id="techstack"><TechStack /></section>
-            <section id="projects"><Projects /></section>
-            <section id="info"><Info /></section>
+            {showSplash ? (
+                <SplashScreen onAnimationEnd={handleSplashEnd} />
+            ) : (
+                <>
+                    <Header activeSection={activeSection} />
+                    <section id="intro"><Intro /></section>
+                    <section id="about"><About /></section>
+                    <section id="techstack"><TechStack /></section>
+                    <section id="projects"><Projects /></section>
+                    <section id="info"><Info /></section>
+                </>
+            )}
         </div>
     );
 }

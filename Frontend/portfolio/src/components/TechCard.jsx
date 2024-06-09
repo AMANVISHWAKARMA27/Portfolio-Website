@@ -8,9 +8,9 @@ function TechCard({ img, vdoSrc, title, url }) {
     const handleMouseEnter = () => {
         setIsHovered(true);
         if (videoRef.current) {
-            videoRef.current.currentTime = 0; // Restart the video
+            videoRef.current.currentTime = 0;
             videoRef.current.play().catch(error => {
-                // Handle the error if needed
+
                 console.error('Error playing video:', error);
             });
         }
