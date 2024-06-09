@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-vars */
-// App.js or your main component
 import React, { useEffect, useState } from 'react';
 import Intro from './components/Intro';
 import About from './components/About';
@@ -18,7 +17,7 @@ function App() {
         const options = {
             root: null,
             rootMargin: '0px',
-            threshold: 0.3 // Adjust this value if necessary
+            threshold: 0.3 
         };
 
         const observer = new IntersectionObserver((entries) => {

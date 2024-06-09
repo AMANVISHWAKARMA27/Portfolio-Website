@@ -18,6 +18,7 @@
   }
 }
 
+
 .splash-container {
   display: flex;
   justify-content: center;
@@ -25,76 +26,7 @@
   height: 100vh;
   background-color: #00001a;
   position: fixed;
-  width: 100%;@keyframes drawHexagon {
-    0% {
-      stroke-dasharray: 0 100;
-    }
-    100% {
-      stroke-dasharray: 100 0;
-    }
-  }
-  
-  @keyframes drawLetter {
-    0% {
-      opacity: 0;
-      stroke-dasharray: 0 100;
-    }
-    100% {
-      opacity: 1;
-      stroke-dasharray: 100 0;
-    }
-  }
-  
-  .splash-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #00001a;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-    top: 0;
-    left: 0;
-  }
-  
-  .hexagon {
-    position: relative;
-    width: 100px;
-    height: 115px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: drawHexagon 1s ease-out forwards;
-    animation-delay: 1s; 
-  }
-    
-  .hexagon::before {
-    content: '';
-    position: absolute;
-    width: inherit;
-    height: inherit;
-    background: none;
-    border: 5px solid #6666ff;
-    clip-path: polygon(
-      50% 0%, 
-      100% 25%, 
-      100% 75%, 
-      50% 100%, 
-      0% 75%, 
-      0% 25%
-    );
-    animation: drawHexagon 1s ease-out forwards;
-  }
-  
-  .letter {
-    font-size: 48px;
-    font-family: Arial, sans-serif;
-    color: #6666ff;
-    opacity: 0;
-    animation: drawLetter 1s ease-out 1s forwards;
-  }
-  
+  width: 100%;
   z-index: 1000;
   top: 0;
   left: 0;
@@ -107,6 +39,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: drawHexagon 1s ease-out forwards;
+  animation-delay: 1s; 
 }
 
 .hexagon::before {
@@ -115,7 +49,7 @@
   width: inherit;
   height: inherit;
   background: none;
-  border: 5px solid #00ffff;
+  border: 5px solid #6666ff;
   clip-path: polygon(
     50% 0%, 
     100% 25%, 
@@ -130,7 +64,43 @@
 .letter {
   font-size: 48px;
   font-family: Arial, sans-serif;
-  color: #00ffff;
+  color: #6666ff;
   opacity: 0;
   animation: drawLetter 1s ease-out 1s forwards;
+}
+
+
+@media screen and (max-width: 768px) {
+  .splash-container {
+    height: auto;
+    padding: 20px;
+  }
+  
+  .hexagon {
+    width: 80px; 
+    height: 92px; 
+  }
+  
+  .hexagon::before {
+    border-width: 4px; 
+  }
+  
+  .letter {
+    font-size: 36px; 
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hexagon {
+    width: 60px; 
+    height: 69px; 
+  }
+  
+  .hexagon::before {
+    border-width: 3px; 
+  }
+  
+  .letter {
+    font-size: 24px; 
+  }
 }

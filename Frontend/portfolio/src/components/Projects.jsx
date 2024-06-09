@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import TechCard from './TechCard';
-import { techCard } from '../assets/techCard'; // Importing the techCard array
+import { techCard } from '../assets/techCard'; 
 
 function Projects() {
   return (
