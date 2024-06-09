@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react';
 
@@ -8,13 +7,20 @@ function TechCard({ img, vdoSrc, title, url }) {
 
     const handleMouseEnter = () => {
         setIsHovered(true);
-        videoRef.current.currentTime = 0; // Restart the video
-        videoRef.current.play();
+        if (videoRef.current) {
+            videoRef.current.currentTime = 0; // Restart the video
+            videoRef.current.play().catch(error => {
+                // Handle the error if needed
+                console.error('Error playing video:', error);
+            });
+        }
     };
 
     const handleMouseLeave = () => {
         setIsHovered(false);
-        videoRef.current.pause();
+        if (videoRef.current) {
+            videoRef.current.pause();
+        }
     };
 
     return (
@@ -24,8 +30,17 @@ function TechCard({ img, vdoSrc, title, url }) {
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
             >
-                <div onClick={() => {window.location.href = url}} className={`h-[80%] w-[98%] rounded-lg mt-[1px] bg-cover flex justify-center items-center hover:bg-none`} style={{ backgroundImage: `url(${img})` }}>
-                    <video ref={videoRef} muted loop className='rounded-lg inset-0 transition-opacity opacity-0 hover:opacity-100'>
+                <div
+                    onClick={() => { window.location.href = url }}
+                    className={`h-[80%] w-[98%] rounded-lg mt-[1px] bg-cover flex justify-center items-center ${isHovered ? '' : 'hover:bg-none'}`}
+                    style={{ backgroundImage: `url(${img})` }}
+                >
+                    <video
+                        ref={videoRef}
+                        muted
+                        loop
+                        className={`rounded-lg inset-0 transition-opacity ${isHovered ? 'opacity-100' : 'opacity-0'}`}
+                    >
                         <source src={vdoSrc} />
                     </video>
                 </div>
