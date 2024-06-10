@@ -5,7 +5,7 @@ import { techCard } from '../assets/techCard';
 
 function Projects() {
   return (
-    <div className='font-sans'>
+    <div className='font-sans mt-3'>
       <div className='p-[10px] flex flex-col justify-around items-center'>
         <div className='flex flex-col w-[100%] min-h-[100vh] justify-between items-center font-sans '>
 
@@ -46,7 +46,6 @@ function Projects() {
             </div>
           </div>
         </div>
-        <div className='h-[1px] w-[97%] border border-[#ffffff41]'></div>
       </div>
     </div>
   );

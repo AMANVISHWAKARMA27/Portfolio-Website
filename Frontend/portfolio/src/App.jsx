@@ -18,7 +18,7 @@ function App() {
         const options = {
             root: null,
             rootMargin: '0px',
-            threshold: 0.3 
+            threshold: 0.3
         };
 
         const observer = new IntersectionObserver((entries) => {
@@ -41,26 +41,32 @@ function App() {
     }, []);
 
     useEffect(() => {
-       
+
         const splashTimer = setTimeout(() => {
             setShowSplash(false);
-        }, 3000); 
+        }, 3000);
 
         return () => clearTimeout(splashTimer);
     }, []);
 
     return (
         <div>
-            {showSplash ? ( 
+            {showSplash ? (
                 <SplashScreen handleSplashEnd={() => setShowSplash(false)} />
             ) : (
                 <>
                     <Header activeSection={activeSection} />
-                    <section id="intro"><Intro /></section>
-                    <section id="about"><About /></section>
-                    <section id="techstack"><TechStack /></section>
-                    <section id="projects"><Projects /></section>
-                    <section id="info"><Info /></section>
+                    <div className='flex flex-col justify-center items-center'>
+                        <section id="intro"><Intro /></section>
+                        <div className='h-[1px] w-[97%] border border-[#ffffff41]'></div>
+                        <section id="about"><About /></section>
+                        <div className='h-[1px] w-[97%] border border-[#ffffff41]'></div>
+                        <section id="techstack"><TechStack /></section>
+                        <div className='h-[1px] w-[97%] border border-[#ffffff41]'></div>
+                        <section id="projects"><Projects /></section>
+                        <div className='h-[1px] w-[97%] border border-[#ffffff41]'></div>
+                        <section id="info"><Info /></section>
+                    </div>
                 </>
             )}
         </div>

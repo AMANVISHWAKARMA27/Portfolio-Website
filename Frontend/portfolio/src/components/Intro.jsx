@@ -10,8 +10,8 @@ function Intro({ activeSection }) {
     };
 
     return (
-        <div className='flex flex-col items-center'>
-            <div className="flex flex-row justify-around items-center h-[100vh] w-[100%] font-sans ">
+        <div className='flex flex-col items-around'>
+            <div className="flex flex-row justify-around items-center h-[90vh] w-[100%] font-sans ">
                 <div className='flex flex-col min-w-[400px] min-h-[350px] p-[10px] justify-between'>
                     <div className='flex flex-col h-[70%] '>
                         <div className='flex flex-col'>
@@ -36,7 +36,6 @@ function Intro({ activeSection }) {
                     </video>
                 </div>
             </div>
-            <div className='h-[1px] w-[97%] border border-[#ffffff41]'></div>
         </div>
     )
 }

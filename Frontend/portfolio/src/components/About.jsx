@@ -23,8 +23,8 @@ function About() {
     }, []);
 
     return (
-        <div className='flex flex-col items-center'>
-            <div className='flex flex-col h-[100vh] w-[100%] justify-around items-center text-white font-sans'>
+        <div className='flex flex-col items-center mt-3'>
+            <div className='flex flex-col h-[102vh] w-[100%] justify-around items-center text-white font-sans'>
                 <div className='flex flex-row h-[35%] w-[98%] justify-between pt-[20px]'>
                     <div className='flex flex-col h-[100%] w-[49%] justify-center items-center'>
                         <div>
@@ -53,7 +53,6 @@ function About() {
                     </p>
                 </div>
             </div>
-            <div className='h-[1px] w-[97%] border border-[#ffffff41]'></div>
         </div>
     );
 }

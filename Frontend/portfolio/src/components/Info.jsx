@@ -17,7 +17,7 @@ function Info() {
         });
     };
     return (
-        <div className='flex flex-col min-h-[104vh] w-[100%] items-center justify-around'>
+        <div className='flex flex-col min-h-[104vh] w-[100%] items-center justify-around mt-3'>
             <div className='flex flex-col h-[450px] justify-around items-center'>
                 <h1 className='text-[#b0edfc] flex items-center justify-center text-[50px] font-extrabold'>Get In Touch</h1>
                 <div className='text-[#b0edfca8] text-light flex flex-col justify-center items-center w-[580px] text-[17px]'>

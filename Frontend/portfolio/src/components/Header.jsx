@@ -64,7 +64,7 @@ function Header({ activeSection }) {
             {activeSection !== 'intro' && (
                 <div className='fixed z-10 h-[40px] w-[40px] text-[#b0edfc7c] bottom-[5vh] right-[5vw]'>
                     <i
-                        className="fas fa-arrow-up text-[30px] cursor-pointer"
+                        className="fa-solid fa-circle-arrow-up text-[30px] cursor-pointer"
                         onClick={() => scrollToSection('intro')}
                     ></i>
                 </div>

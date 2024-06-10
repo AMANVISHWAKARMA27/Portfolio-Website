@@ -7,7 +7,7 @@ import { toolCard } from '../assets/toolCard';
 
 function TechStack() {
     return (
-        <div className='flex flex-col items-center min-h-[60vh] w-[100%]'>
+        <div className='flex flex-col justify-center items-center min-h-[60vh] w-[100%] mt-3'>
             <div className='flex flex-col w-[100%] min-h-[240vh] items-center justify-around font-sans'>
                 <div className='flex justify-center items-center h-[5%] w-[90%] text-white'>
                     <h1 className='text-[65px] text-[#6666ff] '><span className='text-white'>WHAT</span> I HAVE <span className='text-white'>LEARNT</span> SO FAR <span className='text-white'>?</span></h1>
@@ -18,7 +18,6 @@ function TechStack() {
                     <CardHolder title={"Tools"} langCard={toolCard} />
                 </div>
             </div>
-            <div className='h-[1px] w-[97%] border border-[#ffffff41]'></div>
         </div>
     );
 }
