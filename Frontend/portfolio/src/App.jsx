@@ -55,7 +55,7 @@ function App() {
                 <SplashScreen handleSplashEnd={() => setShowSplash(false)} />
             ) : (
                 <>
-                    <Header activeSection={activeSection}/>
+                    <Header activeSection={activeSection} />
                     <section id="intro"><Intro /></section>
                     <div className='h-[1px] w-[97%] border border-[#ffffff41]'></div>
                     <section id="about"><About /></section>

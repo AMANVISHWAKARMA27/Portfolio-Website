@@ -17,8 +17,8 @@ function Info() {
         });
     };
     return (
-        <div className='flex flex-col min-h-[104vh] w-[100%] items-center justify-around mt-3'>
-            <div className='flex flex-col h-[450px] justify-around items-center'>
+        <div className='flex flex-col h-[104vh] w-[100%] items-center justify-center mt-3'>
+            <div className='flex flex-col h-[650px] justify-evenly items-center '>
                 <h1 className='text-[#b0edfc] flex items-center justify-center text-[50px] font-extrabold'>Get In Touch</h1>
                 <div className='text-[#b0edfca8] text-light flex flex-col justify-center items-center w-[580px] text-[17px]'>
                     <div>My inbox is always open. Whether you have a question or just want to say</div>
