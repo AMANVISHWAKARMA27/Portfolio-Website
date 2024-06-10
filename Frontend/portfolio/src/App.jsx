@@ -55,18 +55,16 @@ function App() {
                 <SplashScreen handleSplashEnd={() => setShowSplash(false)} />
             ) : (
                 <>
-                    <Header activeSection={activeSection} />
-                    <div className='flex flex-col justify-center items-center'>
-                        <section id="intro"><Intro /></section>
-                        <div className='h-[1px] w-[97%] border border-[#ffffff41]'></div>
-                        <section id="about"><About /></section>
-                        <div className='h-[1px] w-[97%] border border-[#ffffff41]'></div>
-                        <section id="techstack"><TechStack /></section>
-                        <div className='h-[1px] w-[97%] border border-[#ffffff41]'></div>
-                        <section id="projects"><Projects /></section>
-                        <div className='h-[1px] w-[97%] border border-[#ffffff41]'></div>
-                        <section id="info"><Info /></section>
-                    </div>
+                    <Header activeSection={activeSection}/>
+                    <section id="intro"><Intro /></section>
+                    <div className='h-[1px] w-[97%] border border-[#ffffff41]'></div>
+                    <section id="about"><About /></section>
+                    <div className='h-[1px] w-[97%] border border-[#ffffff41]'></div>
+                    <section id="techstack"><TechStack /></section>
+                    <div className='h-[1px] w-[97%] border border-[#ffffff41]'></div>
+                    <section id="projects"><Projects /></section>
+                    <div className='h-[1px] w-[97%] border border-[#ffffff41]'></div>
+                    <section id="info"><Info /></section>
                 </>
             )}
         </div>
