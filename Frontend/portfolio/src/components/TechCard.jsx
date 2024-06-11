@@ -26,7 +26,7 @@ function TechCard({ img, vdoSrc, title, url }) {
     return (
         <div>
             <div
-                className={`bg-[url('./cardbg.jpeg')] bg-cover shadow-lg h-[180px] w-[260px] m-[10px] rounded-lg flex flex-col items-center justify-around hover:shadow-lg transform hover:scale-105 transition duration-300 relative`}
+                className={`bg-[url('./cardbg.jpeg')] bg-cover shadow-lg h-[120px] w-[180px] md:h-[150px] md:w-[230px] lg:h-[180px] lg:w-[260px] m-[10px] rounded-lg flex flex-col items-center justify-around hover:shadow-lg transform hover:scale-105 transition duration-300 relative`}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
             >
@@ -44,7 +44,7 @@ function TechCard({ img, vdoSrc, title, url }) {
                         <source src={vdoSrc} />
                     </video>
                 </div>
-                <h1 className='text-[20px] font-light text-[#80e5ff]'>{title}</h1>
+                <h1 className='text-[12px] md:text-[16px] lg:text-[18px] xl:text-[20px] font-light text-[#80e5ff]'>{title}</h1>
             </div>
         </div>
     );

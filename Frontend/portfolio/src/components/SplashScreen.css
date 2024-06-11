@@ -72,7 +72,7 @@
 
 @media screen and (max-width: 768px) {
   .splash-container {
-    height: auto;
+    height: 100vh;
     padding: 20px;
   }
   

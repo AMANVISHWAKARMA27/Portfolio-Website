@@ -57,13 +57,13 @@ function App() {
                 <>
                     <Header activeSection={activeSection} />
                     <section id="intro"><Intro /></section>
-                    <div className='h-[1px] w-[97%] border border-[#ffffff41]'></div>
+                    {/* <div className='h-[1px] w-[97%] border border-[#ffffff41]'></div> */}
                     <section id="about"><About /></section>
-                    <div className='h-[1px] w-[97%] border border-[#ffffff41]'></div>
+                    {/* <div className='h-[1px] w-[97%] border border-[#ffffff41]'></div> */}
                     <section id="techstack"><TechStack /></section>
-                    <div className='h-[1px] w-[97%] border border-[#ffffff41]'></div>
+                    {/* <div className='h-[1px] w-[97%] border border-[#ffffff41]'></div> */}
                     <section id="projects"><Projects /></section>
-                    <div className='h-[1px] w-[97%] border border-[#ffffff41]'></div>
+                    {/* <div className='h-[1px] w-[97%] border border-[#ffffff41]'></div> */}
                     <section id="info"><Info /></section>
                 </>
             )}
