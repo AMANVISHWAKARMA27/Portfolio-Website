@@ -7,7 +7,7 @@ import { toolCard } from '../assets/toolCard';
 
 function TechStack() {
     return (
-        <div className='flex flex-col justify-center items-center'>
+        <div className='flex flex-col justify-center items-center w-[100%]'>
             <div className='flex flex-col justify-center items-center lg:min-h-[60vh] w-[90%] mt-3 '>
             <div className='flex flex-col w-[100%] min-h-[240px] items-center font-sans justify-evenly'>
                 <div className='flex justify-center items-center h-[5%] w-[90%] text-white mb-[50px] mt-[50px]'>

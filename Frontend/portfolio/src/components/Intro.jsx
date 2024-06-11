@@ -10,7 +10,7 @@ function Intro({ activeSection }) {
     };
 
     return (
-        <div className='flex flex-col items-center md:min-h-[70vh] lg:min-h-[100vh]'>
+        <div className='flex flex-col items-center md:min-h-[70vh] lg:min-h-[100vh] w-[100%]'>
             <div className="hidden md:flex flex-row justify-center items-center min-h-[70vh] lg:min-h-[100vh] min-w-[600px] font-sans ml-[30px] mr-[30px]">
                 <div className='flex flex-col md:min-w-[20px] md:min-h-[250px] lg:w-[300px] xl:min-w-[400px] lg:min-h-[300px] p-[10px] justify-between  mr-3'>
                     <div className='flex flex-col lg:h-[150px] xl:h-[250px] w-[100%]'>
@@ -30,7 +30,7 @@ function Intro({ activeSection }) {
                             className={`${activeSection === 'about' ? 'text-[#00ffff]' : 'text-[#b0edfc]'} border border-[#9393f9ad] p-2 rounded lg:w-[130px] xl:w-[150px] text-white hover:bg-[#6666ff] duration-150`}>Learn More</button>
                     </div>
                 </div>
-                <div className='flex md:h-[200px] md:w-[580px] lg:w-[710px] lg:h-[300px] xl:h-[400px] rounded-2xl shadow-[#0000cc7b] shadow-md'>
+                <div className='flex md:h-[200px] lg:h-[300px] xl:h-[400px] rounded-2xl shadow-[#0000cc7b] shadow-md'>
                     <video autoPlay muted loop className='rounded-2xl '>
                         <source src='/video2.mp4' />
                     </video>
@@ -48,7 +48,7 @@ function Intro({ activeSection }) {
                         <p className='text-[#b3d1ff] text-wrap'>A full-stack website developer who is learning
                             the insights of technology with passion.</p>
                     </div>
-                    <div className='flex h-[250px] w-[450px] md:h-[250px] md:w-[400px] rounded-2xl shadow-[#0000cc7b] shadow-md'>
+                    <div className='flex h-[200px] rounded-2xl shadow-[#0000cc7b] shadow-md '>
                         <video autoPlay muted loop className='rounded-2xl'>
                             <source src='/video2.mp4' />
                         </video>

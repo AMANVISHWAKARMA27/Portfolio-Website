@@ -23,8 +23,8 @@ function About() {
     }, []);
 
     return (
-        <div className='flex flex-col items-center mt-3'>
-            <div className='flex flex-col h-[70vh] w-[100%] justify-around items-center text-white font-sans'>
+        <div className='flex flex-col items-center mt-3 w-[100%]'>
+            <div className='flex flex-col h-[100vh] w-[100%] justify-around items-center text-white font-sans'>
                 <div className='hidden md:flex md:flex-row h-[35%] w-[85%] justify-between pt-[20px]'>
                     <div className='flex flex-col h-[100%] w-[49%] justify-center items-center'>
                         <div>
@@ -45,7 +45,7 @@ function About() {
                 </div>
 
                 <div className='flex md:hidden flex-col h-[50%] w-[85%] pt-[20px]'>
-                    <div className='flex flex-col h-[100%] w-[49%] justify-center'>
+                    <div className='flex flex-col h-[100%] w-[100%] justify-center'>
                             <h1 className='text-[26px] md:text-[28px] lg:text-[30px] xl:text-[30px] leading-3 text-[#ccffff]'>WHO AM I ?</h1>
                             <h1 className='text-[37px] md:text-[35px] lg:text-[50px] xl:text-[65px] text-[#6666ff]'>Let&apos;s discover</h1>
                     </div>

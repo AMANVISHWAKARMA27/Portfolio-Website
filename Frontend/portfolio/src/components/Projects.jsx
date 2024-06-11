@@ -5,7 +5,7 @@ import { techCard } from '../assets/techCard';
 
 function Projects() {
   return (
-    <div className='flex flex-col justify-center items-center'>
+    <div className='flex flex-col justify-center items-center w-[100%]'>
       <div className='font-sans mt-3 w-[89%]'>
         <div className='p-[10px] flex flex-col items-center'>
           <div className='flex flex-col w-[100%] min-h-[100vh] justify-center items-center font-sans '>

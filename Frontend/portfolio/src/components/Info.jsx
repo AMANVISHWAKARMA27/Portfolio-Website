@@ -17,11 +17,11 @@ function Info() {
         });
     };
     return (
-        <div className='flex flex-col justify-between items-center h-[100vh]'>
+        <div className='flex flex-col justify-between items-center h-[100vh] w-[100%]'>
             <div className='flex flex-col h-[60%] w-[80%] items-center justify-center mt-[100px]'>
                 <div className='flex flex-col h-[50vh] md:h-[80vh] lg:h-[100vh] items-center justify-between'>
                     <h1 className='text-[#b0edfc] flex items-center justify-center md:text-[40px] lg:text-[45px] xl:text-[50px] font-extrabold'>Get In Touch</h1>
-                    <div className='text-[#b0edfca8] text-light flex flex-col justify-center items-center w-[530px] lg:w-[500px] xl:w-[580px] text-[14px] md:text-[15px] lg:text-[15px] xl:text-[17px]'>
+                    <div className='text-[#b0edfca8] text-light flex flex-col justify-center items-center w-[530px] lg:w-[500px] xl:w-[580px] text-[13px] md:text-[15px] lg:text-[15px] xl:text-[17px]'>
                         <div>My inbox is always open. Whether you have a question or just want to say</div>
                         <div>hello, I&apos;ll try my best to get back to you! Feel free to mail me about any</div>
                         <div>relevant job updates.</div>
