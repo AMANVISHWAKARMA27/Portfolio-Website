@@ -30,7 +30,7 @@ function Intro({ activeSection }) {
                             className={`${activeSection === 'about' ? 'text-[#00ffff]' : 'text-[#b0edfc]'} border border-[#9393f9ad] p-2 rounded lg:w-[130px] xl:w-[150px] text-white hover:bg-[#6666ff] duration-150`}>Learn More</button>
                     </div>
                 </div>
-                <div className='flex md:h-[200px] md:w-[580px] lg:h-[300px] xl:h-[400px] rounded-2xl shadow-[#0000cc7b] shadow-md'>
+                <div className='flex md:h-[200px] md:w-[580px] lg:w-[710px] lg:h-[300px] xl:h-[400px] rounded-2xl shadow-[#0000cc7b] shadow-md'>
                     <video autoPlay muted loop className='rounded-2xl '>
                         <source src='/video2.mp4' />
                     </video>

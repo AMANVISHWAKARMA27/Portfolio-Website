@@ -7,15 +7,14 @@ function About() {
 
     const generateQuote = async () => {
         try {
-            const response = await fetch("");
-            // https://api.quotable.io/random
+            const response = await fetch("https://api.quotable.io/random");
             const data = await response.json();
             setQuote(data.content);
             setAuthor(data.author);
         } catch (error) {
             console.error("Failed to fetch the quote", error);
             setQuote("Failed to load quote");
-            setAuthor("");
+            setAuthor("Invalid");
         }
     };
 
