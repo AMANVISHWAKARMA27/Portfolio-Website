@@ -11,7 +11,7 @@ function TechStack() {
             <div className='flex flex-col justify-center items-center lg:min-h-[60vh] w-[90%] mt-3 '>
             <div className='flex flex-col w-[100%] min-h-[240px] items-center font-sans justify-evenly'>
                 <div className='flex justify-center items-center h-[5%] w-[90%] text-white mb-[50px] mt-[50px]'>
-                    <h1 className='text-[28px] md:text-[40px] lg:text-[55px] xl:text-[65px] text-[#6666ff] lg:mb-[30px] '><span className='text-white'>WHAT</span> I HAVE <span className='text-white'>LEARNT</span> SO FAR <span className='text-white'>?</span></h1>
+                    <h1 className='text-[21px] md:text-[40px] lg:text-[55px] xl:text-[65px] text-[#6666ff] lg:mb-[30px] '><span className='text-white'>WHAT</span> I HAVE <span className='text-white'>LEARNT</span> SO FAR <span className='text-white'>?</span></h1>
                 </div>
                 <div className='flex flex-col h-[88%] w-[95%] justify-center items-center rounded-lg'>
                     <CardHolder title={"Programming Language"} langCard={langCard} />
