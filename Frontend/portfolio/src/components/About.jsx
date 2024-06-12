@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react';
 import './About.css'; // Make sure to create and import a CSS file for the animations
@@ -44,7 +45,7 @@ function About() {
         }, 10000); // 10 seconds interval
 
         return () => clearInterval(interval);
-    }, []);
+    }, [generateQuote]);
 
     return (
         <div className='flex flex-col items-center mt-3 w-[100%]'>
