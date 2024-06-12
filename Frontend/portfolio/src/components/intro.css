@@ -1,0 +1,19 @@
+.blink-shadow {
+    position: relative;
+    transition: box-shadow 0.15s ease-in-out;
+    box-shadow: 0 0 15px 5px rgba(173, 216, 230, 0.5); /* Initial bluish color */
+    animation: blink 1.5s infinite alternate;
+  }
+  
+  @keyframes blink {
+    0% {
+      box-shadow: 0 0 15px 5px rgba(173, 216, 230, 0.5); /* Light blue gradient color start */
+    }
+    50% {
+      box-shadow: 0 0 25px 10px rgba(135, 206, 250, 0.7); /* Slightly brighter blue color */
+    }
+    100% {
+      box-shadow: 0 0 15px 5px rgba(173, 216, 230, 0.5); /* Light blue gradient color end */
+    }
+  }
+  

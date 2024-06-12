@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from 'react'
+import './intro.css'
 
 function Intro({ activeSection }) {
 
@@ -21,13 +22,18 @@ function Intro({ activeSection }) {
                         <p className='text-[#b3d1ff] text-wrap'>A full-stack website developer who is learning
                             the insights of technology with passion.</p>
                     </div>
-                    <div className='flex md:min-w-[100px] md:min-h-[40px] lg:min-w-[120px] lg:min-h-[50px] xl:min-w-[150px] xl:h-[60px] p-2 pl-0 '>
+                    <div className='flex md:min-w-[100px] md:min-h-[40px] lg:min-w-[120px] lg:min-h-[50px] xl:min-w-[150px] xl:h-[60px] p-2 pl-0 justify-between'>
                         <button
                             onClick={() => scrollToSection('info')}
-                            className={`${activeSection === 'info' ? 'text-[#00ffff]' : 'text-[#b0edfc]'} bg-[#6666ff] p-2 rounded lg:w-[130px] xl:w-[150px] mr-4 hover:bg-[#4b4bf8] duration-150 hover:text-[#cce6ff] shadow-md shadow-[#262641]`}>Get In Touch</button>
+                            className={`${activeSection === 'info' ? 'text-[#00ffff]' : 'text-[#b0edfc]'} bg-[#6666ff] p-2 rounded mr-2 lg:w-[130px] xl:w-[150px] hover:bg-[#4b4bf8] duration-150 hover:text-[#cce6ff] shadow-md shadow-[#262641]`}>Get In Touch</button>
                         <button
                             onClick={() => scrollToSection('about')}
-                            className={`${activeSection === 'about' ? 'text-[#00ffff]' : 'text-[#b0edfc]'} border border-[#9393f9ad] p-2 rounded lg:w-[130px] xl:w-[150px] text-white hover:bg-[#6666ff] duration-150`}>Learn More</button>
+                            className={`${activeSection === 'about' ? 'text-[#00ffff]' : 'text-[#b0edfc]'} border border-[#9393f9ad] mr-2 p-2 rounded lg:w-[130px] xl:w-[150px] text-white hover:bg-[#6666ff] duration-150`}>Learn More</button>
+                        <button
+                            className="border border-[#9393f9ad] p-2 rounded lg:w-[130px] xl:w-[150px] text-white hover:bg-[#6666ff] duration-150 blink-shadow"
+                        >
+                            RESUME
+                        </button>
                     </div>
                 </div>
                 <div className='flex md:h-[200px] lg:h-[300px] xl:h-[400px] rounded-2xl shadow-[#0000cc7b] shadow-md'>
@@ -53,13 +59,18 @@ function Intro({ activeSection }) {
                             <source src='/video2.mp4' />
                         </video>
                     </div>
-                    <div className='flex lg:min-w-[120px] lg:min-h-[50px] xl:min-w-[150px] xl:h-[60px] p-2 pl-0'>
+                    <div className='flex lg:min-w-[120px] lg:min-h-[50px] xl:min-w-[150px] xl:h-[60px] p-2 pl-0 justify-between'>
                         <button
                             onClick={() => scrollToSection('info')}
-                            className={`${activeSection === 'info' ? 'text-[#00ffff]' : 'text-[#b0edfc]'} bg-[#6666ff] p-2 rounded w-[130px] mr-4 hover:bg-[#4b4bf8] duration-150 hover:text-[#cce6ff] shadow-md shadow-[#262641]`}>Get In Touch</button>
+                            className={`${activeSection === 'info' ? 'text-[#00ffff]' : 'text-[#b0edfc]'} bg-[#6666ff] p-2 rounded text-[12px] w-[100px] mr-2 hover:bg-[#4b4bf8] duration-150 hover:text-[#cce6ff] shadow-md shadow-[#262641]`}>Get In Touch</button>
                         <button
                             onClick={() => scrollToSection('about')}
-                            className={`${activeSection === 'about' ? 'text-[#00ffff]' : 'text-[#b0edfc]'} border border-[#9393f9ad] p-2 rounded w-[130px] text-white hover:bg-[#6666ff] duration-150`}>Learn More</button>
+                            className={`${activeSection === 'about' ? 'text-[#00ffff]' : 'text-[#b0edfc]'} border border-[#9393f9ad] p-2 rounded text-[12px] w-[100px] mr-2 text-white hover:bg-[#6666ff] duration-150`}>Learn More</button>
+                        <button
+                            className="border border-[#9393f9ad] p-2 rounded text-white hover:bg-[#6666ff]  duration-150 blink-shadow"
+                        >
+                            RESUME
+                        </button>
                     </div>
                 </div>
             </div>
