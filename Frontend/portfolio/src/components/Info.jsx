@@ -36,13 +36,7 @@ function Info() {
                         <div className='h-[1px] border border-[#b0edfc] w-[100px]'></div>
                     </div>
                     <div>
-                        <p className='text-[#b0edfc]'>Call on&nbsp; <a
-                            className='cursor-pointer hover:scale-110 hover:text-[#aa5df7]'
-                            onClick={handleCopy}
-                        >
-                            +91 8957175307
-                        </a></p>
-                        <p className={`text-green-400 text-[12px] absolute ${display}`}>Phone number copied to clipboard.</p>
+                        <p className='text-[#b0edfc] cursor-pointer hover:scale-110 hover:text-[#aa5df7]'><a href='https://www.linkedin.com/in/aman-vishwakarma-3b788828a?'>Connect to Me</a></p>
                     </div>
                 </div>
             </div>
