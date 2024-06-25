@@ -24,6 +24,12 @@ export const libCard = [
         url:"https://getbootstrap.com/"
     },
     {
+        img: "./mui.png",
+        level: "Advanced",
+        textColor: "text-red-500",
+        url:"https://mui.com/material-ui/"
+    },
+    {
         img: "./tailwind.png",
         level: "Advanced",
         textColor: "text-red-500",

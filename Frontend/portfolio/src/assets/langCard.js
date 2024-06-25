@@ -18,6 +18,12 @@ export const langCard = [
     url:"https://developer.mozilla.org/en-US/docs/Web/JavaScript"
   },
   {
+    img: "/ts.png",
+    level: "Advanced",
+    textColor: "text-red-500",
+    url:"https://www.typescriptlang.org/"
+  },
+  {
     img: "/c.jpeg",
     level: "Advanced",
     textColor: "text-red-500",
