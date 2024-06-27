@@ -49,7 +49,7 @@ export const langCard = [
   },
   {
     img: "/sql.jpeg",
-    level: "Advanced",
+    level: "Intermediate",
     textColor: "text-yellow-500",
     url:"https://www.w3schools.com/sql/"
   },

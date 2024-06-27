@@ -24,10 +24,34 @@ export const toolCard = [
         url:"https://colab.research.google.com/"
     },
     {
+        img: "/chatgpt.png",
+        level: "Advanced",
+        textColor: "text-red-500",
+        url:"https://openai.com/chatgpt/"
+    },
+    {
+        img: "/canva.jpeg",
+        level: "Advanced",
+        textColor: "text-red-500",
+        url:"https://www.canva.com/"
+    },
+    {
+        img: "/figma.png",
+        level: "Intermediate",
+        textColor: "text-yellow-500",
+        url:"https://www.figma.com/"
+    },
+    {
         img: "/git.png",
         level: "Intermediate",
         textColor: "text-yellow-500",
         url:"https://www.git-scm.com/"
+    },
+    {
+        img: "/postman.png",
+        level: "Intermediate",
+        textColor: "text-yellow-500",
+        url:"https://www.postman.com/"
     },
     {
         img: "/ubuntu.png",

@@ -88,7 +88,7 @@ function About() {
 
                 <div className='flex flex-row h-[40%] w-[85%] font-thin items-center justify-center'>
                     <p className='text-[18px] md:text-[18px] lg:text-[27px] xl:text-[30px] text-[#b3ecff] indent-1'>
-                        My name is <span className='font-semibold font-sans text-[#6666ff] hover:text-[#258bf1] duration-100'><a href='https://www.linkedin.com/in/aman-vishwakarma-3b788828a?'>Aman Vishwakarma</a></span>, a fervent tech aficionado currently immersed in the pursuit of a <span className='font-semibold font-sans text-[#6666ff] hover:text-[#258bf1] duration-100 cursor-default'>Bachelor&apos;s in Technology</span>
+                        My name is <span className='font-semibold font-sans text-[#6666ff] hover:text-[#258bf1] duration-100'><a href='https://www.linkedin.com/in/aman-vishwakarma-3b788828a?'>Aman Vishwakarma</a></span>, a fervent tech aficionado currently immersed in the pursuit of a <span className='font-semibold font-sans text-[#6666ff] hover:text-[#258bf1] duration-100 cursor-default'>Bachelor&apos;s in Technology </span>
                         degree with a specialization in <span className='font-semibold font-sans text-[#6666ff] hover:text-[#258bf1] duration-100 cursor-default'>Information Technology</span> at the prestigious <span className='font-semibold font-sans text-[#6666ff] hover:text-[#258bf1] duration-100'><a href='https://iiitl.ac.in/'>Indian Institute of Information Technology, Lucknow</a></span> from the year 2023 to 2027.
                         Engaged in the enthralling domain of Web Development, I aspire to excel as a Full Stack Web Developer, driven by a relentless
                         passion for innovation and learning.

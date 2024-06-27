@@ -14,8 +14,8 @@ function TechStack() {
                     <h1 className='text-[21px] md:text-[40px] lg:text-[55px] xl:text-[65px] text-[#6666ff] lg:mb-[30px] '><span className='text-white'>WHAT</span> I HAVE <span className='text-white'>LEARNT</span> SO FAR <span className='text-white'>?</span></h1>
                 </div>
                 <div className='flex flex-col h-[88%] w-[95%] justify-center items-center rounded-lg'>
-                    <CardHolder title={"Programming Language"} langCard={langCard} />
-                    <CardHolder title={"Libraries & Framework"} langCard={libCard} />
+                    <CardHolder title={"Programming Languages"} langCard={langCard} />
+                    <CardHolder title={"Libraries & Frameworks"} langCard={libCard} />
                     <CardHolder title={"Tools"} langCard={toolCard} />
                 </div>
             </div>
