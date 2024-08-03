@@ -32,7 +32,7 @@ function Projects() {
                   <h1 className='text-[#d9fafc] text-[22px] md:text-[22px] lg:text-[25px] xl:text-[30px]'>The <span>FullStacks</span></h1>
                 </div>
 
-                <div className='flex flex-row flex-wrap lg:min-h-[80px] xl:min-h-[100px] w-[95%] p-5 items-center justify-evenly flex-2'>
+                <div className='flex flex-wrap lg:min-h-[80px] xl:min-h-[100px] w-[95%] p-5 items-center justify-evenly '>
 
                   <div className='flex flex-col items-center justify-evenly h-[380px] border-[1px] border-[#ffffffb1] w-[300px] rounded-md hover:shadow-xl transform hover:scale-105 transition duration-300 relative'>
                     <div className='w-[95%] h-[85%] rounded-md flex flwx-col bg-[url("./sharecarelogo.png")] bg-cover bg-center card-zoom hover:scale-105 delay-200 duration-100 hover:shadow-lg items-end justify-center'>
@@ -52,6 +52,16 @@ function Projects() {
                       </div>
                     </div>
                     <p className='text-[20px] lg:text-[22px] xl:text-[25px] text-[#80e5ff]'>Amazon Clone</p>
+                  </div>
+
+                  <div className='flex flex-col items-center justify-evenly h-[380px] border-[1px] border-[#ffffffb1] w-[300px] rounded-md hover:shadow-xl transform hover:scale-105 transition duration-300 relative'>
+                    <div className='w-[95%] h-[85%] rounded-md flex flwx-col bg-[url("./lock.ico")] bg-cover bg-center card-zoom hover:scale-105 delay-200 duration-100 hover:shadow-lg items-end justify-center'>
+                      <div className=' flex w-[95%]  mb-2 justify-between'>
+                        <button onClick={() => { window.location.href = "https://anonymata.vercel.app" }} className='bg-[#ffa64d] h-[30px] text-[10px] w-[70px] hover:bg-[#f8b26d]'>Visit Site</button>
+                        <button onClick={() => { window.location.href = "https://github.com/AMANVISHWAKARMA27/AnonyMata" }} className='bg-[#ffa64d] h-[30px] text-[10px] w-[80px] hover:bg-[#f8b26d]'>Go to Repository</button>
+                      </div>
+                    </div>
+                    <p className='text-[20px] lg:text-[22px] xl:text-[25px] text-[#80e5ff]'>AnonyMata</p>
                   </div>
 
                 </div>

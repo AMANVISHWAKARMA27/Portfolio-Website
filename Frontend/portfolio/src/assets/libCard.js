@@ -36,6 +36,12 @@ export const libCard = [
         url:"https://tailwindcss.com/"
     },
     {
+        img: "./shadcn.jpeg",
+        level: "Intermediate",
+        textColor: "text-yellow-500",
+        url:"https://ui.shadcn.com/"
+    },
+    {
         img: "./next.png",
         level: "Intermediate",
         textColor: "text-yellow-500",
